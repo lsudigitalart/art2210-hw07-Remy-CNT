@@ -32,8 +32,12 @@ if (soundFile.isPlaying()) {
     noStroke();
     ellipse(width / 2, height / 2, circleSize);
 }
-    if (millis() - startTime > 3000) {
+    if (millis() - startTime > 30000) {
+        noLoop(); 
+    return;
         ellipse(width / 2, height / 2, 50);
     }
+
+
 }
   
